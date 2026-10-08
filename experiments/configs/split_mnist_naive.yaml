@@ -1,0 +1,14 @@
+benchmark: split_mnist
+method: naive
+dataset:
+  root: "./data"
+  batch_size: 64
+  num_tasks: 5
+  classes_per_task: 2
+training:
+  epochs: 2
+  lr: 0.001
+model:
+  architecture: mlp
+  hidden_dim: 400
+seed: 42
